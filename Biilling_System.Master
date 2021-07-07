@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Biilling_System.master.cs" Inherits="WebApplication1.Biilling_System" %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Billing System Home</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="Scripts/Billing_System_Style.css">
+    <link rel="stylesheet" href="Scripts/fab.css" type="text/css" />
+    <link rel="stylesheet" href="Scripts/font.css" />
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/94d58fb044.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Billing System</h3>
+                    <strong>BS</strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="Billing_System_Home.aspx">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-exchange-alt"></i>
+                            Transaction
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="place_Order.aspx">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                    Place Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Invoice.aspx">
+                                    <i class="fas fa-truck-moving"></i>
+                                    Supply Outward
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Supply_Inward.aspx">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    Supply Inward
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-users-cog"></i>
+                            Administration
+                        </a>
+                        <ul class="collapse list-unstyled" id="adminSubmenu">
+                            <li>
+                                <a href="Supplier_Master.aspx">
+                                    <i class="fas fa-file-invoice-dollar"></i>
+                                    Account Master
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-file-invoice"></i> 
+                                    Item Master
+                                </a>
+                            </li>
+                            <li>
+                        </ul>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-cog"></i>
+                            Management
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="Project_Management_Home.aspx">
+                                    <i class="fas fa-tasks"></i>
+                                    Project Management
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-file-contract"></i>
+                                    Document Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #101010;">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">
+                                        <asp:Label ID="Label1" runat="server" style="color:#EEFFFF;font-size:1.1em;line-height:1.7em;"></asp:Label></a>
+                                </li>
+                                <li class="nav-item">
+                                    <asp:LinkButton ID="LinkButton2" CssClass="nav-link" runat="server" OnClick="LinkButton2_Click">Logout</asp:LinkButton>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div>
+                    <div class="fab-container">
+                        <div class="fab fab-icon-holder">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <ul class="fab-options">
+                            <li>
+                                <span class="fab-label">Go Back</span>
+                                <div class="fab-icon-holder">
+                                    <span><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><i class="fas fa-tachometer-alt"></i></asp:LinkButton></span>
+                                </div>
+                                </li>
+                            </ul>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

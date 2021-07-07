@@ -1,0 +1,33 @@
+﻿* {
+    font-family: 'Caveat', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.new2 {
+    color: #EEFFFF;
+    line-height: 1.7em;
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.mydropdown{
+    border:none;
+    border-bottom:2px solid #30ff4b;
+    color:#EEFFFF;
+    width:100%;
+}
+
+.mydropdown-content {
+    background-color: #101010;
+    color: #EEFFFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+table,th,td{
+    border:1px solid #EEFFFF;
+    background-color:#101010;
+    color:#EEFFFF;
+    width:auto;
+}

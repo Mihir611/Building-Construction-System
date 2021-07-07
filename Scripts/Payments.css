@@ -1,0 +1,183 @@
+﻿body {
+    background-image: url("../Images/20944159.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.app-container {
+    height: auto;
+    width: 350px;
+    background-image: linear-gradient(#580e8f,#9200ff);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, .8);
+}
+
+.top-box{
+    height:110px;
+    background-color:#9100fb;
+    border-bottom-left-radius:80px;
+    border-bottom-right-radius:80px;
+}
+
+.top-box p{
+    margin-top:0;
+    text-align:center;
+    padding-top:20px;
+    color:#fff;
+}
+
+.left-icon{
+    float:left;
+    margin-left:30px;
+}
+
+.right-icon {
+    float: right;
+    margin-left: 30px;
+}
+
+.middle-box{
+    height:150px;
+    background-image:linear-gradient(#580e8f,#9200ff);
+    margin:-70px 30px 20px;
+    color:#fff;
+    text-align:center;
+    font-size:12px;
+    border-radius:10px;
+}
+
+.middle-box h1{
+    padding-top:30px;
+    padding-bottom:5px;
+    font-size:50px;
+    font-weight:normal;
+}
+
+.middle-box h1 span{
+    font-size:20px;
+    margin-left:5px;
+    bottom:18px;
+    position:relative;
+}
+
+.payment-options-btn{
+    color:#fff;
+    margin:5px 30px;
+    height:30px;
+    width:290px;
+    background-color:#9100fd;
+    border:none;
+    cursor:pointer;
+}
+
+.card-details{
+    background:#FFF;
+    color:#555;
+    margin:10px 30px;
+    padding:10px;
+    width:275px;
+}
+
+.card-details p {
+    font-size:14px;
+}
+
+.card-details label{
+    font-size:10px;
+    line-height:20px;
+}
+
+.card-num-field-group{
+    margin-top:10px;
+}
+
+.date-num-field-group {
+    margin-top: 10px;
+    display:inline-block;
+}
+
+.cvv-num-field-group {
+    margin-top: 10px;
+    display: inline-block;
+    float:right;
+}
+
+.name-field-group {
+    margin-top: 10px;
+}
+
+.card-num-field, .name-field{
+    width:270px;
+}
+
+.date-num-field, .cvv-num-field{
+    width:70px;
+}
+
+.card-num-field,.date-num-field,.name-field,.cvv-num-field{
+    border:1px solid #ccc;
+    height:22px;
+    padding:5px;
+    font-size:10px;
+}
+
+.card-num-field, .date-num-field, .name-field, .cvv-num-field::placeholder {
+    color: #ccc;
+}
+
+.card-num-field, .date-num-field, .name-field, .cvv-num-field::after{
+    color:#000;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #000;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width:75%;
+}
+
+hr:after{
+    color:#000;
+    background-color:Highlight;
+    content: 'Or';
+    padding: 0 4px;
+    position: relative;
+    top: -10px;
+}
+
+.pay-btn {
+    color: #fff;
+    margin-top: 20px;
+    height: 30px;
+    width: 270px;
+    background-color: #9100fd;
+    border: none;
+    cursor: pointer;
+}
+
+@media(width:700px){
+    .app-container{
+        width:500px;
+        height:auto;
+    }
+    .top-box{
+        height:90px;
+    }
+}
+
+@media(height:700){
+    .app-container {
+        top: 50%;
+    }
+    .middle-box h1{
+        padding-top:0;
+        padding-bottom:0;
+        font-size:25px;
+    }
+}

@@ -1,0 +1,472 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia", sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url("../Images/pexels-chanaka-906484.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: fixed;
+    width:100%;
+}
+
+.navi-bar {
+    display: flex;
+    padding: 40px 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navi-logo img {
+    width: 50px;
+}
+
+.navi-links {
+    flex: 1;
+}
+
+    .navi-links ul {
+        margin-left: 50px;
+        display: inline;
+    }
+
+        .navi-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 25px;
+        }
+
+        .navi-links ul a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navi-links ul li::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background: yellow;
+            display: block;
+            margin: auto;
+        }
+
+        .navi-links ul li:hover::after {
+            width: 100%;
+            transition: 0.5s;
+        }
+
+        .navi-links ul a:visited{
+            color:#ce1111;
+        }
+
+            .navi-links ul a:visited:disabled {
+                color: #ce1111;
+            }
+
+.btn1 {
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    cursor: pointer;
+}
+
+btn1 a{
+    text-decoration:none;
+    color:#171515;
+}
+
+.btn1 .fa{
+    color:#000;
+    padding-right:15px;
+}
+
+.navi-links .btn1 {
+    float: right;
+}
+
+.banner-title {
+    color: #fff;
+    margin: 80px 130px;
+    padding-left: 175px;
+    padding-bottom: 300px;
+}
+
+    .banner-title h1 {
+        padding-top: 10px;
+        font-size: 45px;
+        font-weight:bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .banner-title h5{
+        text-align:center;
+        margin-bottom:60px;
+    }
+
+    .banner-title h4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+        .banner-title h1,h5 span {
+            color: yellow;
+        }
+
+.vertical-bar {
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.social-icon {
+    height: 35%;
+    width: 80px;
+    background: yellow;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+
+    .social-icon .fa {
+        margin: 15px 23px;
+        display: block;
+        padding: 8px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+    }
+
+.notifications {
+    display: flex;
+    width: 400px;
+    right: 0;
+    bottom: 0;
+    background: yellow;
+    align-items: center;
+    float: right;
+}
+
+.contents {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.notification-img {
+    flex-basis: 50%;
+}
+
+    .notification-img img {
+        width: 100%;
+    }
+
+.contents a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.contents p {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.navi-bar .fa {
+    display: none;
+}
+
+.lb1 {
+    color: #fff;
+    padding-left: 15px;
+}
+
+.mydiv {
+    background: #171515;
+    color: #f5eeee;
+    border-radius: 5px;
+    border-left: 2px solid #fff;
+    padding: 20px;
+}
+
+.counter-section {
+    margin-top: 5%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("../Images/pexels-andrea-piacquadio-3769146.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f5eeee;
+}
+
+.counter-section1 {
+    margin-top: 5%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("../Images/rain-316580_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f5eeee;
+}
+
+.icon-box {
+    border: 3px solid #000;
+    border-radius:50%;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+    transform: rotate(45deg);
+}
+
+    .icon-box .fa {
+        font-size: 40px;
+        margin: 27px auto;
+        color: #ffc800;
+        transform: rotate(-45deg);
+    }
+
+.counter-box p {
+    font-size: 25px;
+    color:#32ff03;
+}
+
+.counter-box .counter {
+    font-size: 25px;
+}
+
+.mypara {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 5px 5px #000;
+}
+
+.mycontainer{
+    background:#171515;
+    color:#f5eeee;
+}
+
+.mycontainer1{
+    background-image:url("../Images/Untitled-1.png");
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.servpara{
+    color:#bad810;
+    font-size:25px;
+}
+
+.mybtn {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.mybtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+    .mybtn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+.mybtn:hover span {
+    padding-right: 25px;
+}
+
+    .mybtn:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+.mycontainer2 {
+    color: #f5eeee;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url("../Images/pexels-burst-374870.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    height:40%;
+}
+
+.container3 {
+    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, .8);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(15px);
+}
+
+.container3 .fa{
+    color:#c70909;
+    font-size:25px;
+}
+
+    .container3 span {
+        color: #f5eeee;
+        font-size:18px;
+        padding-left:15px;
+        padding-top:10px;
+    }
+
+    .container3 h3{
+        color:#000;
+    }
+
+    .container4 p{
+        padding-top:15px;
+        padding-left:25px;
+    }
+
+.content {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.mycol:nth-child(2) .content {
+    background: #ffa200;
+    color: #fff;
+}
+
+    .mycol:nth-child(2) .content p {
+        color: #fff;
+    }
+
+.content:hover {
+    background: #ffa200;
+}
+
+    .content:hover p, .content:hover h2, .content:hover h3 {
+        color: #fff;
+    }
+
+h3, h2 {
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+    color: #919191;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+span {
+    font-size: 18px;
+    padding-right: 1px;
+}
+
+.btn-dark {
+    display: block;
+    margin: 10px auto;
+    width: 65%;
+    padding: 10px;
+    border-radius: 400px;
+    font-weight: 600;
+}
+
+    .btn-dark:hover {
+        background: #fff;
+        color: #000;
+    }
+
+@media (max-width:768px) {
+    .vertical-bar {
+        display: none;
+    }
+
+    .banner-title {
+        margin: 80px 40px;
+        padding-left:75px;
+    }
+
+        .banner-title h1 {
+            font-size: 25px;
+        }
+
+    .notifications {
+        width: 100%;
+    }
+
+    .navi-bar {
+        padding: 10px 30px;
+    }
+
+    .fa-bars {
+        position: absolute;
+        right: 20px;
+        top: 10px
+    }
+
+    .navi-bar .fa {
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .navi-links {
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        left: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+        .navi-links ul a {
+            display: block;
+        }
+
+        .navi-links .btn1 {
+            float: none;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        .content{
+            margin:20px;
+        }
+}

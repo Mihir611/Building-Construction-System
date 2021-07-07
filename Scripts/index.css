@@ -1,0 +1,553 @@
+﻿*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color:#101010;
+}
+
+.navbar .mynav .navbar-nav .nav-link {
+    color: #EEFFFF;
+    transition: all 0.5s ease-in;
+}
+
+.navbar .mynav .navbar-nav .nav-link:hover {
+    text-decoration: none;
+    color: #ff050a;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 17px 0px;
+}
+
+.secondary {
+    background: #101010;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 1s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.img1 {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url("../assets/Images/344344.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img2 {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url("../assets/Images/pexels-anamul-rezwan-1216589.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img3 {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url("../assets/Images/pexels-andrea-piacquadio-845451.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider, .slider ul, .slider ul li {
+    height: 710px;
+    width: 100%;
+    color: #EEFFFF;
+    text-align: center;
+}
+
+.slider h2 {
+    font-weight: bold;
+    margin-top: 275px;
+}
+
+.slider span {
+    color: #ff0;
+}
+
+.slider a {
+    padding: 10px 40px;
+    margin-right: 10px;
+}
+
+.slider i {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.slider a.btn-half, a.btn-full {
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.slider a.btn-half:hover {
+    border: 2px solid #ff6a00;
+    background-color: #100f0f;
+    transition: all .5s ease-in;
+    color: #e21616;
+}
+
+.slider a.btn-full:hover {
+    border: 2px solid #ff6a00;
+    background-color: #100f0f;
+    transition: all .5s ease-in;
+    color: #e21616;
+}
+
+.intro-aria {
+    background: #101010;
+    color: #EEFFFF;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.sub-heading {
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-heading:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 2px;
+    background: #4d4dff;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sub-heading:hover:before {
+    width: 12%;
+    margin-left: -12px;
+}
+
+.sub-heading:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 2px;
+    background: #e1e1e1;
+}
+
+.sub-heading p {
+    display: inline-block;
+    padding: 0 0 20px 0;
+    position: relative;
+    line-height: 24px;
+}
+
+.intro-block {
+    position: relative;
+    background: #101010;
+    color: #EEFFFF;
+    margin: 50px 0 0;
+    padding: 70px 25px 40px;
+    text-align: center;
+}
+
+.intro-block:hover, .intro-block.active {
+    background: #0aabe1;
+}
+
+.intro-block:hover {
+    cursor: pointer;
+    -webkit-transition: all 0.65s ease-in;
+    -moz-transition: all 0.65s ease-in;
+    -ms-transition: all 0.65s ease-in;
+    transition: all 0.65s ease-in;
+}
+
+.intro-block .fas, .intro-block .fab {
+    width: 64px;
+    height: 64px;
+    font-size: 30px;
+    color: #EEFFFF;
+    line-height: 50px;
+    background: deepskyblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #CCCEF9;
+    text-align: center;
+}
+
+.intro-block .intro-icon {
+    position: absolute;
+    top: -33px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block:hover .fas, .intro-block.active .fas, .intro-block:hover .fab, .intro-block.active .fab {
+    background: white;
+    color: deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+}
+
+.intro-block h3 {
+    font-size: 18px;
+    color: deepskyblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.intro-block p {
+    color: #505050;
+}
+
+.intro-block:hover h3, .intro-block:hover p {
+    color: #F6F6F6;
+}
+
+.feature-area {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../assets/Images/pexels-miguel-á-padriñán-2249527.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.title h2, p {
+    color: #EEFFFF;
+}
+
+.single-feature h4 {
+    color: #EEFFFF;
+}
+
+.single-feature {
+    position: relative;
+    width: 360px;
+    float: left;
+    padding: 30px 0;
+    text-align: center;
+    border-right: 2px solid #65C8E5;
+    border-bottom: 2px solid #4d4dff;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+}
+
+.feature-block:after {
+    content: "";
+    display: table;
+}
+
+.feature-block:before {
+    clear: both;
+}
+
+.featured-icon {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.single-feature i.fas {
+    border: 2px solid #EEFFFF;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    background: #00A7DD;
+    color: #EEFFFF;
+    width: 64px;
+    height: 64px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+}
+
+.feature-block:hover .single-feature {
+    border-color: #fff;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+}
+
+.single-feature:hover .featured-icon .fas {
+    border: 2px solid #00A7DD;
+    background: #EEFFFF;
+    color: #00A7DD;
+}
+
+.single-feature:nth-of-type(even) {
+    border-right: none;
+}
+
+.single-feature:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.single-feature:last-child {
+    border-bottom: none;
+}
+
+.feature-mockup {
+    position: relative;
+    bottom: -220px;
+}
+
+.more-features {
+    background: #101010;
+}
+
+.more-features .title h2 {
+    color: #EEFFFF;
+}
+
+.more-features .title .sub-heading p {
+    color: #EEFFFF;
+}
+
+.feature-list ul {
+    list-style: none;
+}
+
+.feature-list li {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 80px;
+}
+
+.feature-list li:hover i {
+    color: #EEFFFF;
+    background: #00A7DD;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+}
+
+.feature-icon {
+    position: absolute;
+    left: 0;
+}
+
+.feature-icon i {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 32px;
+    background: #EEFFFF;
+    color: #00A7DD;
+    line-height: 64px;
+    border: 2px solid #00A7DD;
+}
+
+.feature-details h3 {
+    color: #00A7DD;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.feature-details p {
+    color: #EEFFFF;
+    font-weight: 300;
+}
+
+.more-features img {
+    margin-right: 30px;
+}
+
+.testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../assets/Images/clientmeet2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    color: #EEFFFF;
+}
+
+.myimg {
+    height: 25%;
+    width: 25%;
+    border: 5px solid #00A7DD;
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    color: #4d4dff;
+}
+
+.team-area {
+    background: #101010;
+}
+
+.team-area h2 {
+    color: #EEFBEB;
+    font-size: 50px;
+}
+
+.team-area p {
+    color: #EEFFFF;
+}
+
+.team-area hr {
+    border: 5px solid #FFD700;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.download h2 {
+    color: #101010;
+}
+
+.download .sub-heading p {
+    color: #EEFBEB;
+}
+
+.download {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(255,255,255,0.6)),url("../assets/Images/pexels-miguel-á-padriñán-2249527.jpg");
+    background-attachment: fixed;
+}
+
+.download .default-btn {
+    background: transparent;
+    border: 1px solid #100f0f;
+    color: #EEFFFF;
+    font-size: 20px;
+    padding: 8px 20px;
+    margin: 0 12px;
+    transition: 0.5s ease-in;
+}
+
+.download .default-btn:hover {
+    background-color: #EEFBEB;
+    color: #101010;
+}
+
+.social-btn {
+    text-align:center;
+    display:block;
+}
+
+.contact-area {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url("../assets/Images/contact-us-banner.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #d6e7fa;
+    padding-top: 100px;
+}
+
+.divider {
+    border-right: 1px solid #d9d9d9;
+}
+
+.contact-area h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.contact-area hr {
+    width: 95%;
+    border: 1px solid #EEFFFF;
+}
+
+.contact-area h4 {
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    letter-spacing: 0.025em;
+}
+
+.contact-area span {
+    display: block;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 00.025em;
+    padding-left: 40px;
+}
+
+.contact-area ul li {
+    overflow: hidden;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.contact-area ul li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-address ul li .fas {
+    float: left;
+    width: 40px;
+    color: #4d4dff;
+    font-size: 30px;
+}
+
+.contact-block {
+    padding-left: 45px;
+}
+
+.contact-area .form-control, .contact-area textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #101010;
+    color: #EEFFFF;
+    border: 1px solid #a5d3eb;
+    padding: 10px 12px;
+    height: 50px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+.contact-area .form-group {
+    margin-bottom: 30px;
+}
+
+.contact-area textarea {
+    min-height: 115px;
+}
+
+.contact-area .default-btn {
+    background-color: #4d4dff;
+    color: #101010;
+    transition: all 0.9s ease-in-out;
+}
+
+.contact-area .default-btn:hover {
+    border: 2px solid #4d4dff;
+    background-color: #0f0f0f;
+    color: #EEFFFF;
+}
+
+@media screen and (max-width:700px){
+    .slider{
+        width:100%;
+    }
+    .intro-block{
+        width:100%;
+    }
+    .single-feature{
+        width:100%;
+        border:none;
+        padding-left:0;
+        margin:0;
+        float:none;
+    }
+    .feature-mockup{
+        bottom:0;
+    }
+
+    .contact-address, .address-phone{
+        padding-left:20px;
+    }
+}

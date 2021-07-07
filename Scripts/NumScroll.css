@@ -1,0 +1,47 @@
+﻿.stat {
+    color: #fff;
+    height: 230px;
+}
+
+    .stat i {
+        font-size: 48px;
+        padding-top: 10px;
+    }
+
+    .stat h4 {
+        font-weight: 700;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+.codes {
+    background: url(img/stats1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.projects {
+    background: url(img/stats2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.clients {
+    background: url(img/stats3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.feedback {
+    background: url(img/stats4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}

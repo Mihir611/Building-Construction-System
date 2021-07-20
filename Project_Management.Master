@@ -22,6 +22,7 @@
     <script src="https://kit.fontawesome.com/94d58fb044.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <form id="form1" runat="server">
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -111,7 +112,7 @@
                     </div>
                 </div>
             </nav>
-            <form id="form1" runat="server">
+            
                 <div>
                     <div class="fab-container">
                         <div class="fab fab-icon-holder">

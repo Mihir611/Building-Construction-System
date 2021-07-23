@@ -52,13 +52,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="WebForm1.aspx">
                                     <i class="fas fa-envelope-open-text"></i>
                                     View Advertised Quotation
                                 </a>
                             </li>
                             <li>
-                                <a href="Review_Q.aspx">
+                                <a href="WebForm1.aspx">
                                     <i class="far fa-share-square"></i>
                                     Review and Send the Quotation
                                 </a>

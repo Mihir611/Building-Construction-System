@@ -246,6 +246,7 @@
     <Content Include="Employee_Home.Master" />
     <Content Include="3d Models\house 2.gltf" />
     <Content Include="3d Models\HOUSE3.glb" />
+    <Content Include="WebForm1.aspx" />
     <None Include="Properties\PublishProfiles\SyndicateConstructionPortal - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\XYZCompanyPortal - Web Deploy.pubxml" />
     <None Include="Properties\Settings.settings">
@@ -697,6 +698,13 @@
     </Compile>
     <Compile Include="View_Receipt.aspx.designer.cs">
       <DependentUpon>View_Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
